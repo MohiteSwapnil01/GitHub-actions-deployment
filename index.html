@@ -1,3 +1,121 @@
 <h1> Welcome to my website </h1>
 <p1>This is statisc wenbsite hosted on s3</p3>:wq
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AWS Static Website</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        padding: 25px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    header h2 {
+        color: #ff9900;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
+    .hero {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .hero h1 span {
+        color: #ff9900;
+    }
+    .hero p {
+        font-size: 18px;
+        max-width: 650px;
+        line-height: 1.7;
+        color: #d5dce5;
+    }
+    .btn {
+        margin-top: 30px;
+        padding: 14px 30px;
+        background: #ff9900;
+        color: #141e30;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+    .btn:hover {
+        background: #ffc04d;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        color: #bbb;
+    }
+    @media(max-width: 600px) {
+        .hero h1 {
+            font-size: 34px;
+        }
+        nav a {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h2>MyCloudWebsite</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+<section class="hero">
+    <h1>Welcome to <span>My AWS Website!</span></h1>
+    <p>
+        Successfully deployed my first static website using
+        Amazon S3 and GitHub Actions.
+        This website demonstrates automated CI/CD deployment
+        using AWS cloud services.
+    </p>
+    <a href="#about" class="btn">Explore More</a>
+</section>
+<section id="about" class="hero">
+    <h1>About This Project</h1>
+    <p>
+        Source Code: GitHub<br>
+        CI/CD: GitHub Actions<br>
+        Cloud Storage: Amazon S3<br>
+        Region: Asia Pacific (Mumbai)
+    </p>
+</section>
+<footer>
+    <p>© 2026 My AWS Static Website | Built with ❤️</p>
+</footer>
+</body>
+</html>
