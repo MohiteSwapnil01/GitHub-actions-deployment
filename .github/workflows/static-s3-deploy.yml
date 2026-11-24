@@ -15,5 +15,5 @@ jobs:
        - name: sync files to s3 bucket
          run: |
             aws s3 sync . s3://your-s3-bucket-name \
-            -- exclude ".git/*" \
+            -- exclude "*" \
             --include "index.html" 
