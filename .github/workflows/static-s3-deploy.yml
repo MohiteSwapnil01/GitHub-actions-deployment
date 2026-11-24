@@ -14,6 +14,6 @@ jobs:
            aws-region: ap-south-1
        - name: sync files to s3 bucket
          run: |
-            aws s3 sync . s3://your-s3-bucket-name \
-            -- exclude "*" \
+            aws s3 sync . s3://my-s3-bucket-web-1 \
+            --exclude "*" \
             --include "index.html" 
