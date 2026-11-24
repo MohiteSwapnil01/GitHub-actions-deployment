@@ -13,4 +13,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project .............
+          echo test, Secrets ${{ secrets.DOCKER_PASSWORD }} and deploy your project.
